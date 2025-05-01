@@ -616,13 +616,13 @@ form .btn{
 #footer .copyright p{ 
     color: #fff;
 }
-@media(max-width: 801px ){ 
+@media(max-width: 801px )
+{ 
     header nav img{ 
         width: 150px;
     }
     header nav ul li a{ 
         margin: 0 5px;
-       
     }
     #about .row ,
     #help .row ,
@@ -631,24 +631,26 @@ form .btn{
         grid-template-columns: 1fr;
         row-gap: 3rem;
     }
-    #help .row .col:first-child::before ,
-#help .row .col:nth-child(2)::before{ 
+     #help .row .col:first-child::before ,
+     #help .row .col:nth-child(2)::before{ 
     display: none;
-}
-  #info .row , #services .row , 
-  #price-list .row , #doctors .row ,
-  #blogs .row , #footer .footer-top .row{ 
+    }
+      #info .row , #services .row , 
+      #price-list .row , #doctors .row ,
+      #blogs .row , #footer .footer-top .row{ 
     grid-template-columns: repeat(2,1.5fr);
     row-gap: 3rem;
-  }
-  #contact .row img{ 
-    width: 100%;
-    order: 1;
-  }
-  #contact .row form{ 
-    order: 2;
-  } 
-  @media (max-width:601px) {
+     }
+     #contact .row img{ 
+       width: 100%;
+       order: 1;
+     }
+     #contact .row form{ 
+       order: 2;
+     } 
+}
+  @media (max-width:601px){
+      
     .title h2 , #call .call-content h2{ 
         font-size: 22px;
     }
@@ -682,15 +684,8 @@ form .btn{
     #brand .row{ 
         justify-content: center;
     }
-
-  }
+ }
 }
-
-
-
-
-
-
 
 
 
