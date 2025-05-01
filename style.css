@@ -616,6 +616,75 @@ form .btn{
 #footer .copyright p{ 
     color: #fff;
 }
+@media(max-width: 801px ){ 
+    header nav img{ 
+        width: 150px;
+    }
+    header nav ul li a{ 
+        margin: 0 5px;
+       
+    }
+    #about .row ,
+    #help .row ,
+    #contact .row ,
+    #newsletter .row{ 
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    #help .row .col:first-child::before ,
+#help .row .col:nth-child(2)::before{ 
+    display: none;
+}
+  #info .row , #services .row , 
+  #price-list .row , #doctors .row ,
+  #blogs .row , #footer .footer-top .row{ 
+    grid-template-columns: repeat(2,1.5fr);
+    row-gap: 3rem;
+  }
+  #contact .row img{ 
+    width: 100%;
+    order: 1;
+  }
+  #contact .row form{ 
+    order: 2;
+  } 
+  @media (max-width:601px) {
+    .title h2 , #call .call-content h2{ 
+        font-size: 22px;
+    }
+    header .navbar nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    header .home-content .col h1{ 
+        font-size: 32px;
+    }
+    #info .row{ 
+        grid-template-columns: 1fr;
+    }
+    #info .row .col{ 
+        flex-direction: column;
+        text-align: center;
+    } 
+    #info .row .col i{ 
+        margin-right: 0;
+        margin-bottom: 10px;
+    } 
+    #services .row ,
+    #price-list .row ,
+    #doctors .row,
+    #blogs .row,
+    #footer .footer-top .row
+    { 
+        grid-template-columns: 1fr;
+    }
+
+    #brand .row{ 
+        justify-content: center;
+    }
+
+  }
+}
 
 
 
